@@ -89,6 +89,48 @@ body.dark header h2 {
   color: #aaa;
 }
 
+.btn {
+  position: relative;
+  display: inline-block;
+
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  text-decoration: none;
+  color: #282828;
+
+  padding: 2px 0;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+
+  width: 100%;
+  height: 1.5px;
+  background-color: #282828;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+body.dark .btn {
+  color: #f5f5f5;
+}
+
+body.dark .btn::after {
+  background-color: #f5f5f5;
+}
+
 .contact-info {
     display: flex;
     justify-content: center;
@@ -175,47 +217,6 @@ footer {
     margin-top: 40px;
 }
 
-.pdf-btn {
-  position: relative;
-  display: inline-block;
-
-  font-size: 13px;
-  font-weight: 600;
-  letter-spacing: 0.3px;
-
-  text-decoration: none;
-  color: #282828;
-
-  padding: 2px 0;
-}
-
-.pdf-btn::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -2px;
-
-  width: 100%;
-  height: 1.5px;
-  background-color: #282828;
-
-  transform: scaleX(0);
-  transform-origin: right;
-  transition: transform 0.3s ease;
-}
-
-.pdf-btn:hover::after {
-  transform: scaleX(1);
-  transform-origin: left;
-}
-
-body.dark .pdf-btn {
-  color: #f5f5f5;
-}
-
-body.dark .pdf-btn::after {
-  background-color: #f5f5f5;
-}
 
 @media (max-width: 768px) {
     .container {
