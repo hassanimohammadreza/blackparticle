@@ -1,21 +1,25 @@
 const toggle = document.querySelector('.menu-toggle');
 const nav = document.querySelector('.navbar-links');
+const links = nav.querySelectorAll('a');
 
-  toggle.addEventListener('click', () => {
-    nav.classList.toggle('active');
+toggle.addEventListener('click', () => {
+  nav.classList.toggle('active');
+  toggle.classList.toggle('active');
+
+  document.body.style.overflow =
+    nav.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+  links.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('active');
+    toggle.classList.remove('active');
+    document.body.style.overflow = 'auto';
   });
-  
-
-// const toggleTheme = document.getElementById('themeToggle');
-
-// toggleTheme.addEventListener('click', () => {
-//   document.body.classList.toggle('light');
-// });
-
+});
 
 
 const form = document.getElementById("contactForm");
-
 const formMessage = document.createElement("div");
 formMessage.classList.add("form-message");
 form.parentNode.insertBefore(formMessage, form.nextSibling);
