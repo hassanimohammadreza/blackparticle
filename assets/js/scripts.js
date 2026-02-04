@@ -27,23 +27,32 @@ form.parentNode.insertBefore(formMessage, form.nextSibling);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  formMessage.textContent = "";
-  formMessage.classList.remove("success", "error");
+  const tokenInput = document.querySelector(
+    'input[name="cf-turnstile-response"]'
+  );
+
+  if (!tokenInput || !tokenInput.value) {
+    showError("Please verify you are human.");
+    return;
+  }
 
   const formData = new FormData(form);
+  formData.append("cf-turnstile-response", tokenInput.value);
 
-  fetch("https://script.google.com/macros/s/AKfycbyoMLOlQs3BtRLkKs-m2XECblWf-IPwg8Na2JqWUtUP_K0AHYjWw7uXqfwtbeQ1kSq7/exec", {
+  fetch(SCRIPT_URL, {
     method: "POST",
-    body: formData,
+    body: formData
   })
-    .then((response) => response.text())
-    .then(() => {
-      formMessage.textContent = "Your message has been successfully sent.";
-      formMessage.classList.add("success");
-      form.reset();
+    .then(res => res.json())
+    .then(data => {
+      if (data.success) {
+        showSuccess("Your message has been sent.");
+        form.reset();
+      } else {
+        showError(data.error || "Submission failed.");
+      }
     })
     .catch(() => {
-      formMessage.textContent = "An error occurred while sending your message. Please try again.";
-      formMessage.classList.add("error");
+      showError("Network error. Please try again.");
     });
 });
