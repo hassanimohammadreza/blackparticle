@@ -1,10 +1,66 @@
-.about, .service-details {
+.about,
+.service-details {
   padding: 80px 20px;
   margin-top: 20px;
+  line-height: 1.8;
+  font-size: 17px;
+  color: #fff; 
 }
 
 .about > *,
 .service-details > * {
-  max-width: 800px;
-  margin-inline: auto;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about h2 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 40px;
+  line-height: 1.2;
+  position: relative;
+}
+
+.about h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: #fff;
+  margin: 15px auto 0 auto;
+  border-radius: 2px;
+}
+
+.about p,
+.service-details p {
+  margin-bottom: 25px;
+  text-align: left; 
+}
+
+.about {
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+  border-radius: 20px;
+  padding: 80px 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .about,
+  .service-details {
+    padding: 60px 16px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p,
+  .service-details p {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .about h2::after {
+    width: 40px;
+  }
 }
