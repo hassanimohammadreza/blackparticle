@@ -1,33 +1,25 @@
-/* pages/blog.css is only for the blog index page:
+.blog-list h3 {
+  text-align: center;
+}
 
-Grid of posts
+.blog-card {
+  background: #171727;
+  padding: 30px;
+  border-radius: 20px;
+}
 
-Cards
+.blog-card h4 {
+  margin: 15px 0;
+}
 
-Filters / categories
+.blog-card p {
+  opacity: 0.7;
+}
 
-Hover effects
-
-Example:
-
-.blog-grid { ... }
-.blog-card { ... }
-.blog-card:hover { ... }
-
-
-❌ Do not style articles here.
-Bonus: future-proofing (optional but smart)
-
-Later, you can safely add:
-
-.article img { ... }
-.article blockquote { ... }
-.article ul, .article ol { ... }
-.article code { ... }
-
-Final rule to remember
-
-Pages get page CSS.
-Content gets content CSS.
-Posts never get their own CSS.
-*/
+.blog-tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-bottom: 10px;
+}
