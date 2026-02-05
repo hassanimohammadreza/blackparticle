@@ -1,55 +1,23 @@
-.pricing {
-  padding: 80px 0;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+.home-hero h2 {
+  font-size: 42px;
+}
+
+.home-hero p {
+  opacity: 0.8;
+  margin-top: 30px;
+}
+
+.home-cta {
   text-align: center;
+  background: linear-gradient(180deg, #1a1a2e, #0f0f17);
 }
 
-.pricing h3 {
-  font-size: 32px;
-  margin-bottom: 10px;
+.home-cta h3 {
+  font-size: 28px;
 }
 
-.pricing-desc {
+.home-cta p {
+  max-width: 600px;
+  margin: 16px auto 0;
   opacity: 0.8;
-  margin-bottom: 50px;
-}
-
-.pricing-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 25px;
-}
-
-.pricing-card {
-  background: linear-gradient(180deg, #1a1a2e, #171727);
-  padding: 35px 30px;
-  border-radius: 20px;
-  text-align: left;
-  position: relative;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
-}
-
-.pricing-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
-}
-
-.pricing-card h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-.pricing-card ul {
-  list-style: none;
-}
-
-.pricing-card ul li {
-  margin-bottom: 12px;
-  opacity: 0.8;
-  font-size: 15px;
-}
-
-.featured {
-  border: 1px solid #fff;
 }
