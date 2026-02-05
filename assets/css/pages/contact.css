@@ -1,0 +1,126 @@
+/* .contact { ... } 
+.cf-turnstile { ... } */
+.contact {
+  padding: 80px 0;
+  background: #171727;
+  color: #fff;
+  text-align: center;
+}
+
+.contact h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.contact p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 30px;
+  background: #1a1a2e;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-form .form-group {
+  margin-bottom: 25px;
+}
+
+.contact-form .form-group label {
+  display: block;
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.contact-form .form-group input,
+.contact-form .form-group textarea {
+  width: 100%;
+  padding: 14px;
+  font-family: inherit;
+  font-size: 1rem;
+  border: 1px solid #fff;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background: #121220;
+  color: #fff;
+}
+
+.contact-form .form-group textarea {
+  resize: vertical;
+  height: 150px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  background-color: #fff;
+  color: #0f0f17;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-form button:hover {
+  background:#0f0f17;
+  color: #fff;
+  border: 1px solid #fff;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.form-message {
+  margin-top: 20px;
+  padding: 14px 18px;
+  border-radius: 12px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  background: #171727;
+  border: 1px solid transparent;
+  animation: fadeIn 0.4s ease;
+}
+
+.form-message.success {
+  color: #6cf;
+  border-color: #6cf;
+  background: linear-gradient(
+    180deg,
+    rgba(102, 204, 255, 0.15),
+    rgba(23, 23, 39, 1)
+  );
+}
+
+.form-message.error {
+  color: #ff6b6b;
+  border-color: #ff6b6b;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 107, 107, 0.15),
+    rgba(23, 23, 39, 1)
+  );
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cf-turnstile {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
