@@ -1,0 +1,10 @@
+.about, .service-details {
+  padding: 80px 20px;
+  margin-top: 20px;
+}
+
+.about > *,
+.service-details > * {
+  max-width: 800px;
+  margin-inline: auto;
+}
