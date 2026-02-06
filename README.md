@@ -49,10 +49,16 @@ black-particle/
 ├── assets/
 │   ├── css/
 │   │   ├── base.css
-│   │   ├── layout.css
 │   │   ├── components.css
+│   │   ├── content.css
+│   │   ├── layout.css
 │   │   └── pages/
-│   │       └── home.css
+│   │       ├── about.css
+│   │       ├── blog.css
+│   │       ├── contact.css
+│   │       ├── faq.css
+│   │       ├── home.css
+│   │       └── service.css
 │   │
 │   ├── js/
 │   │   └── main.js
@@ -65,6 +71,7 @@ black-particle/
 └── resume/
     └── resume-en.html
 ```
+
 ---
 
 ## 🎯 Project Purpose
@@ -79,6 +86,8 @@ Demonstrate front-end fundamentals without frameworks
 
 Provide a clean, customizable structure for creative projects
 
+---
+
 ## 🖌 Customization Guide
 
 Brand name & content → Edit HTML files
@@ -90,6 +99,8 @@ Layout system → assets/css/layout.css
 Buttons, cards, navigation → assets/css/components.css
 
 Page-specific styles → assets/css/pages/
+
+---
 
 ## 👤 Author
 
