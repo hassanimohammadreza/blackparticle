@@ -64,3 +64,52 @@ black-particle/
 │
 └── resume/
     └── resume-en.html
+```
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/your-username/black-particle.git
+```
+
+## 2. Open the project
+
+You can open index.html directly in your browser, or use a local server:
+
+# Using VS Code Live Server
+Right-click index.html → Open with Live Server
+
+## 🎯 Project Purpose
+
+This project is designed to:
+
+Showcase a creative studio portfolio
+
+Serve as a base template for agency or freelance websites
+
+Demonstrate front-end fundamentals without frameworks
+
+Provide a clean, customizable structure for creative projects
+
+## 🖌 Customization Guide
+
+Brand name & content → Edit HTML files
+
+Colors & typography → assets/css/base.css
+
+Layout system → assets/css/layout.css
+
+Buttons, cards, navigation → assets/css/components.css
+
+Page-specific styles → assets/css/pages/
+
+## 👤 Author
+
+Black Particle
+Creative Content Studio
+Motion Graphics • Branding • UI/UX Design
+
+🔗 LinkedIn: https://www.linkedin.com/in/hr-/
