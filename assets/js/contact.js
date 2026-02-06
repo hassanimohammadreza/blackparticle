@@ -1,3 +1,4 @@
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwqHF7KahVwGIDiSQSIX_6VPQVg5syk-BYu-y3xdVyKguZnJmvSxKlk7ZqWvRIgnm88/exec";
 const form = document.getElementById("contactForm");
 const formMessage = document.createElement("div");
 formMessage.classList.add("form-message");
@@ -27,6 +28,7 @@ form.addEventListener("submit", function (e) {
       if (data.success) {
         showSuccess("Your message has been sent.");
         form.reset();
+        if (window.turnstile) turnstile.reset();
       } else {
         showError(data.error || "Submission failed.");
       }
