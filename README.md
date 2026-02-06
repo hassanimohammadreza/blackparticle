@@ -24,10 +24,10 @@ Built using clean HTML, modular CSS, and lightweight JavaScript for performance,
 
 - **HTML5** – semantic and accessible structure  
 - **CSS3** – modular architecture  
-  - `base.css` – global styles & resets  
-  - `layout.css` – layout & grid system  
+  - `base.css` – global styles & resets
   - `components.css` – reusable UI components
   -  `content.css` – Long-form content styles (blog posts, articles, typography)
+  - `layout.css` – layout & grid system  
   - `pages/` – page-specific styles  
 - **JavaScript (Vanilla)** – UI interactions and menu logic  
 
