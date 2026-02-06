@@ -1,3 +1,66 @@
-## Live Demo
-A live preview of the advertising agency website, showcasing video production, motion graphics, and web design services.  
-[View blackparticle](https://hassanimohammadreza.github.io/blackparticle/)
+# Black Particle – Creative Studio Website
+
+A modern, responsive portfolio website for **Black Particle**, a creative content studio specializing in **motion graphics, video production, graphic design, and UI/UX design**.
+
+Built using clean HTML, modular CSS, and lightweight JavaScript for performance, scalability, and ease of customization.
+
+---
+
+## ✨ Features
+
+- Responsive layout for desktop, tablet, and mobile
+- Modern hero and service sections
+- Dropdown navigation menu
+- Service showcase with hover effects
+- Pricing plans section
+- Call-to-action blocks
+- Newsletter subscription (Google Forms integration)
+- Clean, scalable CSS architecture
+- Minimal vanilla JavaScript (no frameworks)
+
+---
+
+## 🧩 Tech Stack
+
+- **HTML5** – semantic and accessible structure  
+- **CSS3** – modular architecture  
+  - `base.css` – global styles & resets  
+  - `layout.css` – layout & grid system  
+  - `components.css` – reusable UI components  
+  - `pages/` – page-specific styles  
+- **JavaScript (Vanilla)** – UI interactions and menu logic  
+
+---
+
+## 📁 Project Structure
+
+```bash
+black-particle/
+│
+├── index.html
+├── animation.html
+├── graphicdesign.html
+├── uidesign.html
+├── aboutus.html
+├── faq.html
+├── contact.html
+├── blog.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── base.css
+│   │   ├── layout.css
+│   │   ├── components.css
+│   │   └── pages/
+│   │       └── home.css
+│   │
+│   ├── js/
+│   │   └── main.js
+│   │
+│   └── images/
+│       ├── motiongraphic.jpg
+│       ├── graphicdesign.jpg
+│       └── ui.jpg
+│
+└── resume/
+    └── resume-en.html
