@@ -17,3 +17,11 @@ toggle.addEventListener('click', () => {
     document.body.style.overflow = 'auto';
   });
 });
+
+
+let submitted = false;
+  document.querySelector(".newsletter-form").addEventListener("submit", () => {
+    setTimeout(() => {
+      document.getElementById("thanks").style.display = "block";
+    }, 500);
+  });
