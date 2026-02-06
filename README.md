@@ -14,7 +14,7 @@ Built using clean HTML, modular CSS, and lightweight JavaScript for performance,
 - Service showcase with hover effects
 - Pricing plans section
 - Call-to-action blocks
-- Newsletter subscription (Google Forms integration)
+- Newsletter subscription
 - Clean, scalable CSS architecture
 - Minimal vanilla JavaScript (no frameworks)
 
@@ -26,7 +26,8 @@ Built using clean HTML, modular CSS, and lightweight JavaScript for performance,
 - **CSS3** – modular architecture  
   - `base.css` – global styles & resets  
   - `layout.css` – layout & grid system  
-  - `components.css` – reusable UI components  
+  - `components.css` – reusable UI components
+  -  `content.css` – Long-form content styles (blog posts, articles, typography)
   - `pages/` – page-specific styles  
 - **JavaScript (Vanilla)** – UI interactions and menu logic  
 
