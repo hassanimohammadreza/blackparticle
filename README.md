@@ -91,8 +91,8 @@ Provide a clean, customizable structure for creative projects
 
 ## 👤 Author
 
-Black Particle
-Creative Content Studio
-Motion Graphics • Branding • UI/UX Design
+Black Particle  
+Creative Content Studio  
+Motion Graphics • Branding • UI/UX Design  
 
 🔗 LinkedIn: https://www.linkedin.com/in/hr-/
