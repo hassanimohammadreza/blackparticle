@@ -89,20 +89,6 @@ Provide a clean, customizable structure for creative projects
 
 ---
 
-## 🖌 Customization Guide
-
-Brand name & content → Edit HTML files
-
-Colors & typography → assets/css/base.css
-
-Layout system → assets/css/layout.css
-
-Buttons, cards, navigation → assets/css/components.css
-
-Page-specific styles → assets/css/pages/
-
----
-
 ## 👤 Author
 
 Black Particle
