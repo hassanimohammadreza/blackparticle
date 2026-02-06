@@ -67,21 +67,6 @@ black-particle/
 ```
 ---
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/black-particle.git
-```
-
-## 2. Open the project
-
-You can open index.html directly in your browser, or use a local server:
-
-# Using VS Code Live Server
-Right-click index.html → Open with Live Server
-
 ## 🎯 Project Purpose
 
 This project is designed to:
