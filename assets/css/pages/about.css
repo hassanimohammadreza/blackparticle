@@ -1,15 +1,10 @@
-.about,
-.service-details {
+.about {
   padding: 80px 20px;
-  margin-top: 20px;
+  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+  border-radius: 20px;
   line-height: 1.8;
   font-size: 17px;
   color: #fff; 
-}
-
-.about > *,
-.service-details > * {
-  max-width: 700px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -35,13 +30,7 @@
 .about p,
 .service-details p {
   margin-bottom: 25px;
-  text-align: left; 
-}
-
-.about {
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
-  border-radius: 20px;
-  padding: 80px 20px;
+  text-align: center; 
 }
 
 @media screen and (max-width: 600px) {
