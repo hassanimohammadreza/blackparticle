@@ -8,19 +8,9 @@ form.appendChild(formMessage);
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const tokenInput = document.querySelector(
-    'input[name="cf-turnstile-response"]'
-  );
-
-  if (!tokenInput || !tokenInput.value) {
-    showError("Please verify you are human.");
-    return;
-  }
-
   submitBtn.disabled = true;
 
   const formData = new FormData(form);
-  formData.append("cf-turnstile-response", tokenInput.value);
 
   fetch(SCRIPT_URL, {
     method: "POST",
