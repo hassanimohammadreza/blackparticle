@@ -2,6 +2,19 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwqHF7KahVwGIDiSQSIX
 const form = document.getElementById("contactForm");
 const submitBtn = form.querySelector('button[type="submit"]');
 const formMessage = document.createElement("div");
+
+function showError(message) {
+  formMessage.textContent = message;
+  formMessage.classList.remove("success");
+  formMessage.classList.add("error");
+}
+
+function showSuccess(message) {
+  formMessage.textContent = message;
+  formMessage.classList.remove("error");
+  formMessage.classList.add("success");
+}
+
 formMessage.classList.add("form-message");
 form.appendChild(formMessage);
 
