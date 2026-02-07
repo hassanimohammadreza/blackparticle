@@ -1,8 +1,9 @@
 const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwqHF7KahVwGIDiSQSIX_6VPQVg5syk-BYu-y3xdVyKguZnJmvSxKlk7ZqWvRIgnm88/exec";
 const form = document.getElementById("contactForm");
+const submitBtn = form.querySelector('button[type="submit"]');
 const formMessage = document.createElement("div");
 formMessage.classList.add("form-message");
-form.parentNode.insertBefore(formMessage, form.nextSibling);
+form.appendChild(formMessage);
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
@@ -15,6 +16,8 @@ form.addEventListener("submit", function (e) {
     showError("Please verify you are human.");
     return;
   }
+
+  submitBtn.disabled = true;
 
   const formData = new FormData(form);
   formData.append("cf-turnstile-response", tokenInput.value);
@@ -32,6 +35,8 @@ form.addEventListener("submit", function (e) {
       } else {
         showError(data.error || "Submission failed.");
       }
+
+      submitBtn.disabled = false;
     })
     .catch(() => {
       showError("Network error. Please try again.");

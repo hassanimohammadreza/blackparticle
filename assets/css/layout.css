@@ -35,7 +35,7 @@ nav a:hover {
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #1c1c2b;
+  background-color: #171727;
   min-width: 160px;
 }
 
@@ -271,7 +271,7 @@ nav a:hover {
   flex: 1;
   padding: 12px 14px;
   border-radius: 30px;
-  border: 1px solid #fff;
+  border: 1px solid #222;
   background: #121220;
   color: #fff;
   font-size: 14px;
@@ -291,7 +291,7 @@ nav a:hover {
 .newsletter-form button:hover {
   background: #0f0f17;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #222;
   transform: translateY(-2px);
 }
 

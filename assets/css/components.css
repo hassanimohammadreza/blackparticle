@@ -1,7 +1,7 @@
  .hero {
   text-align: center;
   padding: 120px 20px;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+  background: radial-gradient(circle at top, #171727, #0f0f17);
 }
 
 .hero h2 {
@@ -33,9 +33,23 @@
 .button:hover {
   background: #0f0f17;
   color: #fff;
-  border: 1px solid #fff;
+  border: 1px solid #222;
   transform: translateY(-3px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+}
+
+.button-highlight {
+    background: #66ccff;
+    color: #0f0f17;
+    border: 1px solid #66ccff;
+}
+
+.button-highlight:hover {
+    background: #0f0f17;
+    color: #66ccff;
+    border: 1px solid #0f0f17;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
 }
 
 .section {
@@ -87,17 +101,29 @@
 
 .pricing {
   padding: 80px 0;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+  background: radial-gradient(circle at top, #171727, #0f0f17);
   text-align: center;
 }
 
 .pricing-card {
-  background: linear-gradient(180deg, #1a1a2e, #171727);
+  background: linear-gradient(180deg, #171727, #121220);
   padding: 35px 30px;
   border-radius: 20px;
   text-align: left;
   position: relative;
   transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+
+.featured {
+  border: 1px solid #66ccff;
+  box-shadow: 0 4px 20px rgba(102, 204, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.featured:hover {
+    box-shadow: 0 8px 30px rgba(102, 204, 255, 0.4);
+    transform: translateY(-8px);
 }
 
 .pricing-card:hover {
@@ -190,8 +216,4 @@
   letter-spacing: 1px;
   transform: translateY(15px);
   transition: transform 0.4s ease;
-}
-
-.featured {
-  border: 1px solid #fff;
 }

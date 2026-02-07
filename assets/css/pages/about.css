@@ -1,6 +1,6 @@
 .about {
   padding: 80px 20px;
-  background: radial-gradient(circle at top, #1a1a2e, #0f0f17);
+  background: radial-gradient(circle at top, #171727, #0f0f17);
   border-radius: 20px;
   line-height: 1.8;
   font-size: 17px;
@@ -22,7 +22,7 @@
   display: block;
   width: 60px;
   height: 3px;
-  background: #fff;
+  background: #66ccff;
   margin: 15px auto 0 auto;
   border-radius: 2px;
 }
