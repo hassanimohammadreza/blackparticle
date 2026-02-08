@@ -237,7 +237,7 @@ nav a:hover {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  margin-right: 10px;
+  margin-right: 5px;
   background: #fff;
   display: inline-flex;
   align-items: center;
@@ -313,3 +313,4 @@ nav a:hover {
     width: 100%;
   }
 }
+
