@@ -75,30 +75,6 @@ black-particle/
 
 ---
 
-## 🎨 Color Palette
-
-| Category | Token | Value |
-|---------|-------|-------|
-| Background | Background/Base | `#0f0f17` |
-| Surface | Surface/Card | `#171727` |
-| Surface | Surface/Input | `#121220` |
-| Text | Text/Primary | `#ffffff` |
-| Text | Text/Secondary | `rgba(255,255,255,0.8)` |
-| Text | Text/Subtle | `rgba(255,255,255,0.6)` |
-| Accent | Accent/Primary | `#ffffff` |
-| Accent | Accent/Inverse | `#0f0f17` |
-| Accent | Accent/Warm-1 | `#d6a86c` |
-| Accent | Accent/Warm-2 | `#f2c77b` |
-| Accent | Accent/Warm-3 | `#e07a5f` |
-| Accent | Accent/Blue | `#66ccff` |
-| Border | Border/Subtle | `#222222` |
-| Border | Border/Glass | `rgba(255,255,255,0.2)` |
-| Overlay | Overlay/Glass | `rgba(255,255,255,0.15)` |
-| Shadow | Shadow/Soft | `rgba(0,0,0,0.3)` |
-
----
-
-
 ## 🎯 Project Purpose
 
 This project is designed to:
