@@ -93,6 +93,7 @@
   background: #171727;
   padding: 30px;
   border-radius: 15px;
+  border: 2px solid #222222;
 }
 
 .card h4 {
@@ -107,6 +108,7 @@
 
 .pricing-card {
   background: linear-gradient(180deg, #171727, #121220);
+  border: 2px solid #222222;
   padding: 35px 30px;
   border-radius: 20px;
   text-align: left;
