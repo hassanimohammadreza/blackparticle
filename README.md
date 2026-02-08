@@ -39,9 +39,9 @@ Built using clean HTML, modular CSS, and lightweight JavaScript for performance,
 black-particle/
 │
 ├── index.html
-├── animation.html
-├── graphicdesign.html
-├── uidesign.html
+├── video-and-animation.html
+├── visual-design.html
+├── user-interface-design.html
 ├── aboutus.html
 ├── faq.html
 ├── contact.html
