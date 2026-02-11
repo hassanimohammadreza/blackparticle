@@ -49,11 +49,18 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  line-height: 0;
   color: #282828;
   transition: 
     background-color 0.3s ease,
     color 0.3s ease,
     transform 0.15s ease;
+}
+
+#themeToggle svg {
+  width: 24px;
+  height: 24px;
+  display: block;
 }
 
 body.dark #themeToggle {
