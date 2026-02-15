@@ -95,4 +95,4 @@ Black Particle
 Creative Content Studio  
 Motion Graphics • Branding • UI/UX Design  
 
-🔗 LinkedIn: https://www.linkedin.com/in/hr-/
+🔗 LinkedIn: [https://www.linkedin.com/company/blackparticle/](https://www.linkedin.com/company/blackparticle/)
