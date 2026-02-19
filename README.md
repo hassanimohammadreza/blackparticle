@@ -4,6 +4,8 @@ A modern, responsive portfolio website for **Black Particle**, a creative conten
 
 Built using clean HTML, modular CSS, and lightweight JavaScript for performance, scalability, and ease of customization.
 
+<a href="https://www.producthunt.com/products/black-particle?embed=true&amp;utm_source=badge-featured&amp;utm_medium=badge&amp;utm_campaign=badge-black-particle" target="_blank" rel="noopener noreferrer"><img alt="Black Particle - A sleek website crafted to engage visionary brands. | Product Hunt" width="250" height="54" src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=1082097&amp;theme=dark&amp;t=1771527798539"></a>
+
 ---
 
 ## ✨ Features
