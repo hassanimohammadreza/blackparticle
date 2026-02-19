@@ -35,7 +35,7 @@ Built using clean HTML, modular CSS, and lightweight JavaScript for performance,
 
 ## 📁 Project Structure
 
-```bash
+```graphql
 black-particle/
 │
 ├── index.html
