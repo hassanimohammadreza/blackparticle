@@ -1,0 +1,25 @@
+.blog-list h3 {
+  text-align: center;
+}
+
+.blog-card {
+  background: #171727;
+  padding: 30px;
+  border-radius: 20px;
+}
+
+.blog-card h4 {
+  margin: 15px 0;
+}
+
+.blog-card p {
+  opacity: 0.8;
+}
+
+.blog-tag {
+  display: inline-block;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 1;
+  margin-bottom: 10px;
+}
