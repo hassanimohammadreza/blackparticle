@@ -1,0 +1,383 @@
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 16px 20px;
+  margin: auto;
+  align-items: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #0f0f17;
+    border-bottom: 1px solid #222;
+    position: relative;
+    white-space: nowrap;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+i img {
+    width: 15px;
+    margin-left: 5px;
+    transition: all 0.3s ease-in;
+}
+
+i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a {
+    opacity: 0.7;
+    padding: 20px 0px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+
+@media (min-width: 801px) {
+
+nav a:hover {
+  opacity: 1;
+}
+
+nav a:hover i img {
+  rotate: -180deg;
+}
+
+.dropdown {
+    transform: translateY(50px);
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    min-width: 160px;
+    background-color: #171727;
+    border-radius: 15px;
+    margin-top: 5px;
+    transition: all 0.5s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.nav-item:hover .dropdown {
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
+}
+}
+
+.dropdown-item:nth-child(2) {
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+.dropdown a {
+    padding: 20px 25px;
+    display: block;
+}
+
+.logo {
+    padding: 10px 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.logo:hover {
+  opacity: 0.8;
+}
+
+.menu-toggle {
+  display: none;
+  width: 26px;
+  height: 18px;
+  position: relative;
+}
+
+@media (max-width: 800px) {
+  .header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+
+  .navbar {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+    
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 1001;
+  }
+  
+  .menu-toggle span {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: 0.35s ease;
+  }
+
+  .menu-toggle span:nth-child(1) {
+    top: 0;
+  }
+
+  .menu-toggle span:nth-child(2) {
+    top: 8px;
+  }
+
+  .menu-toggle span:nth-child(3) {
+    top: 16px;
+  
+  }
+  .menu-toggle.active span:nth-child(1) {
+    top: 8px;
+    transform: rotate(45deg);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    top: 8px;
+    transform: rotate(-45deg);
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 80%;
+    background: #0f0f17;
+    gap: 0;
+    transform: translateX(-100%);
+    transition: transform 0.4s ease;
+    z-index: 1000;
+    font-size: 1.5rem;
+    visibility: hidden;
+    opacity: 0;
+    padding: 0 70px;
+  }
+
+  .nav-list.active {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+  }  
+
+  .nav-item {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: solid #222;
+  }
+
+  li.nav-item:nth-child(2) {
+    padding: 20px 0;
+  }
+
+  .nav-item:nth-child(2) a {
+    padding: 15px 0;
+  }
+
+  .dropdown {
+    position: static;
+    min-width: 160px;
+    background: none;
+    box-shadow: none;
+    display: block;
+    opacity: 0;
+    max-height: 0;
+    transition: all 0.5s ease;
+}
+
+.change.dropdown {
+  opacity: 1;
+  max-height: 100%;
+}
+
+i img {
+    width: 15px;
+    margin-left: 25px;
+    rotate: 270deg;
+    transition: all 0.3s ease-in;
+}
+
+.change > i:last-child img {
+    transform: rotate(90deg);
+}
+
+.dropdown a {
+  font-size: 1rem;
+  padding: 5px 0;
+}
+
+.dropdown-item:nth-child(2) {
+  border: none;
+}
+}
+
+.fat-footer {
+  background: linear-gradient(180deg, #171727, #0f0f17);
+  padding: 80px 0 30px;
+  margin-top: 80px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+}
+
+.footer-col h5 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
+
+.footer-col ul {
+  list-style: none;
+}
+
+.footer-col ul li {
+  margin-bottom: 12px;
+}
+
+.footer-col ul li a {
+  opacity: 0.7;
+  font-size: 14px;
+  transition: opacity 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  opacity: 1;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-col.brand p {
+  font-size: 14px;
+  opacity: 0.7;
+  line-height: 1.7;
+}
+
+.footer-socials {
+  margin-top: 20px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  margin-right: 5px;
+  background: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #0f0f17;
+  transition: transform 0.3s ease;
+}
+
+.footer-socials a svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.footer-socials a:hover {
+  transform: translateY(-3px);
+}
+
+.newsletter p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin-bottom: 20px;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 12px 14px;
+  border-radius: 30px;
+  border: 1px solid #222;
+  background: #121220;
+  color: #fff;
+  font-size: 14px;
+}
+
+.newsletter-form button {
+  padding: 12px 22px;
+  border-radius: 30px;
+  border: none;
+  background: #fff;
+  color: #0f0f17;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+  background: #0f0f17;
+  color: #fff;
+  border: 1px solid #222;
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  border-top: 1px solid #222;
+  margin-top: 50px;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 13px;
+  opacity: 0.6;
+}
+
+@media (max-width: 600px) {
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+  }
+}
+
